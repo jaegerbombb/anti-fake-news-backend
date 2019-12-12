@@ -15,7 +15,7 @@ export default article => {
 
     console.log("sentences");
 
-    model.classify(testBody).then(predictions => {
+    model.classify(article).then(predictions => {
       // `predictions` is an array of objects, one for each prediction head,
       // that contains the raw probabilities for each input along with the
       // final prediction in `match` (either `true` or `false`).

@@ -5,14 +5,14 @@ import testBody from "../lib/testBody";
 import toxicity from "../lib/toxicity";
 
 export default (article, responseCall) => {
-  console.log(testBody);
+  console.log(article);
 
   const perfectTenseApiUrl = "https://api.perfecttense.com/correct";
   const form = new FormData();
-  form.append("text", `${testBody || "What is ur name?"}`);
+  form.append("text", `${article.text || "What is ur name?"}`);
   form.append("responseType", "grammarScore");
 
-  console.log("toxicity", toxicity());
+  console.log("toxicity", toxicity(article.text));
 
   fetch(perfectTenseApiUrl, {
     method: "POST",
