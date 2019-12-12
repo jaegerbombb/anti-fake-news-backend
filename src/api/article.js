@@ -1,6 +1,7 @@
 // import Grammarbot from "grammarbot"
 import fetch from "node-fetch";
 import FormData from "form-data";
+import toxicity from "../lib/toxicity";
 
 export default (article, responseCall) => {
   console.log(article);
@@ -12,16 +13,19 @@ export default (article, responseCall) => {
 
   // const body = { text: "What is ur name?", responseType: "grammar" };
 
-  fetch(perfectTenseApiUrl, {
-    method: "POST",
-    headers: { Authorization: "WNoOdif3f4cN3W0tuBBZgwtt" },
-    body: form
-  })
-    .then(res => res.json())
-    .then(json => {
-      console.log(json);
-      return responseCall.json({ grammarScore: json.grammarScore });
-    });
+  console.log("toxicity", toxicity());
+
+  // fetch(perfectTenseApiUrl, {
+  //   method: "POST",
+  //   headers: { Authorization: "WNoOdif3f4cN3W0tuBBZgwtt" },
+  //   body: form
+  // })
+  //   .then(res => res.json())
+  //   .then(json => {
+  //     console.log(json);
+
+  //     return responseCall.json({ grammarScore: json.grammarScore });
+  //   });
 
   // Grammar Bot API Test Failed as no index score as result
   // const bot = new Grammarbot({

@@ -32,7 +32,6 @@
   "license": "MIT",
   "dependencies": {
     "@tensorflow-models/toxicity": "^1.2.1",
-    "@tensorflow/tfjs": "^1.4.0",
     "@tensorflow/tfjs-node": "^1.4.0",
     "body-parser": "^1.13.3",
     "compression": "^1.5.2",
