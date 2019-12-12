@@ -1,6 +1,6 @@
 export default `SUBSCRIBE NOW
 
-you're an absolute fucking cunt and a disgrace
+I HATE YOU, YOU SUCK!!!
 
 LOGIN
 News > World > Americas
