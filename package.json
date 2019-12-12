@@ -31,12 +31,17 @@
   "author": "Jason Miller <jason@developit.ca>",
   "license": "MIT",
   "dependencies": {
+    "@tensorflow-models/toxicity": "^1.2.1",
+    "@tensorflow/tfjs": "^1.4.0",
+    "@tensorflow/tfjs-node": "^1.4.0",
     "body-parser": "^1.13.3",
     "compression": "^1.5.2",
     "cors": "^2.7.1",
     "express": "^4.13.3",
+    "form-data": "^3.0.0",
     "grammarbot": "^1.0.2",
     "morgan": "^1.8.0",
+    "node-fetch": "^2.6.0",
     "resource-router-middleware": "^0.6.0"
   },
   "devDependencies": {

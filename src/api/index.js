@@ -13,6 +13,12 @@ export default ({ config, db }) => {
 
   // main code
   api.post("/article", (req, res) => {
+    console.log(req);
+    console.log(req.body);
+    console.log(req.json);
+    if (req.body && req.body.article) {
+      return article(req.body.article, res);
+    }
     res.json({ version });
   });
 
